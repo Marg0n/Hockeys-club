@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -26,11 +26,24 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- tailwind custom color -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
   </head>
 
   <body class="font-manrope">
     <header>
-      <div class="navbar bg-base-100 container mx-auto">
+      <div class="navbar container mx-auto">
         <!-- hamburger menu -->
         <div class="navbar-start">
           <div class="dropdown">
@@ -52,9 +65,9 @@
             </div>
             <ul
               tabindex="0"
-              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-base font-normal"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow rounded-box w-52 text-base font-normal"
             >
-              <li><a href="">Home</a></li>
+              <li class="text-red-500"><a href="">Home</a></li>
               <li><a href="">About</a></li>
               <li><a href="">Pages</a></li>
               <li><a href="">Blog</a></li>
@@ -69,7 +82,7 @@
         <!-- center menu -->
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1 text-base font-normal">
-            <li><a href="">Home</a></li>
+            <li class="text-red-500"><a href="">Home</a></li>
             <li><a href="">About</a></li>
             <li><a href="">Pages</a></li>
             <li><a href="">Blog</a></li>
