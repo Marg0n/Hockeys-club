@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
+  <!-- data-theme="light" -->
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -91,7 +92,7 @@
         </div>
 
         <div class="navbar-end">
-          <button class="btn btn-ghost btn-circle">
+          <button class="btn btn-ghost btn-circle hidden lg:flex">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="h-5 w-5"
@@ -111,7 +112,153 @@
         </div>
       </div>
     </header>
-    <main></main>
+
+    <main class="container mx-auto">
+      <!-- Carousel with next/prev buttons -->
+      <section class="mt-8 flex justify-center h-96 lg:h-auto">
+        <div class="carousel lg:w-full w-[94dvw]">
+          <!-- slide-1 -->
+          <div
+            id="slide1"
+            class="carousel-item relative w-full h-[12.5rem] lg:min-h-screen bg-[url(./images/1.png)] bg-no-repeat bg-cover bg-center rounded-2xl"
+          >
+            <div
+              class="bg-black text-white h-36 p-8 rounded-2xl absolute -bottom-44 lg:right-8 lg:bottom-8"
+            >
+              <h3 class="text-lg lg:text-2xl font-extrabold mb-4">
+                Meet all the heroes from the field
+              </h3>
+              <p
+                class="text-sm lg:text-base font-medium leading-6 lg:leading-7"
+              >
+                Meet the heros and pride of our club infront of you. Don't lose
+                the chance and sign up!
+              </p>
+            </div>
+
+            <div
+              class="absolute space-x-2 lg:left-8 lg:bottom-8 left-[37.5%] bottom-3"
+            >
+              <a
+                href="#slide4"
+                class="btn btn-circle bg-black text-white border-none"
+                >❮</a
+              >
+              <a
+                href="#slide2"
+                class="btn btn-circle bg-black text-white border-none"
+                >❯</a
+              >
+            </div>
+          </div>
+
+          <!-- slide-2 -->
+          <div
+            id="slide2"
+            class="carousel-item relative w-full bg-[linear-gradient(30deg,rgb(0,0,0,.4),rgb(0,0,0,.1)),url(./images/1.png)] bg-no-repeat bg-cover bg-center rounded-2xl lg:min-h-screen h-[12.5rem]"
+          >
+            <div
+              class="bg-black text-white h-36 p-8 rounded-2xl absolute -bottom-44 lg:right-8 lg:bottom-8"
+            >
+              <h3 class="text-lg lg:text-2xl font-extrabold mb-4">
+                Meet all the heroes from the field
+              </h3>
+              <p
+                class="text-sm lg:text-base font-medium leading-6 lg:leading-7"
+              >
+                Meet the heros and pride of our club infront of you. Don't lose
+                the chance and sign up!
+              </p>
+            </div>
+
+            <div
+              class="absolute space-x-2 lg:left-8 lg:bottom-8 left-[37.5%] bottom-3"
+            >
+              <a
+                href="#slide1"
+                class="btn btn-circle bg-black text-white border-none"
+                >❮</a
+              >
+              <a
+                href="#slide3"
+                class="btn btn-circle bg-black text-white border-none"
+                >❯</a
+              >
+            </div>
+          </div>
+
+          <!-- slide-3 -->
+          <div
+            id="slide3"
+            class="carousel-item relative w-full bg-[linear-gradient(45deg,rgb(25,123,195,.4),rgb(1,0,1,.1)),url(./images/1.png)] bg-no-repeat bg-cover bg-center rounded-2xl lg:min-h-screen h-[12.5rem]"
+          >
+            <div
+              class="bg-black text-white h-36 p-8 rounded-2xl absolute -bottom-44 lg:right-8 lg:bottom-8"
+            >
+              <h3 class="text-lg lg:text-2xl font-extrabold mb-4">
+                Meet all the heroes from the field
+              </h3>
+              <p
+                class="text-sm lg:text-base font-medium leading-6 lg:leading-7"
+              >
+                Meet the heros and pride of our club infront of you. Don't lose
+                the chance and sign up!
+              </p>
+            </div>
+
+            <div
+              class="absolute space-x-2 lg:left-8 lg:bottom-8 left-[37.5%] bottom-3"
+            >
+              <a
+                href="#slide2"
+                class="btn btn-circle bg-black text-white border-none"
+                >❮</a
+              >
+              <a
+                href="#slide4"
+                class="btn btn-circle bg-black text-white border-none"
+                >❯</a
+              >
+            </div>
+          </div>
+
+          <!-- slide-4 -->
+          <div
+            id="slide4"
+            class="carousel-item relative w-full bg-[linear-gradient(180deg,rgb(110,192,152,.4),rgb(1,0,1,.1)),url(./images/1.png)] bg-no-repeat bg-cover bg-center rounded-2xl lg:min-h-screen h-[12.5rem]"
+          >
+            <div
+              class="bg-black text-white h-36 p-8 rounded-2xl absolute -bottom-44 lg:right-8 lg:bottom-8"
+            >
+              <h3 class="text-lg lg:text-2xl font-extrabold mb-4">
+                Meet all the heroes from the field
+              </h3>
+              <p
+                class="text-sm lg:text-base font-medium leading-6 lg:leading-7"
+              >
+                Meet the heros and pride of our club infront of you. Don't lose
+                the chance and sign up!
+              </p>
+            </div>
+
+            <div
+              class="absolute space-x-2 lg:left-8 lg:bottom-8 left-[37.5%] bottom-3"
+            >
+              <a
+                href="#slide3"
+                class="btn btn-circle bg-black text-white border-none"
+                >❮</a
+              >
+              <a
+                href="#slide1"
+                class="btn btn-circle bg-black text-white border-none"
+                >❯</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer></footer>
   </body>
 </html>
